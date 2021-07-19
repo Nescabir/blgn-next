@@ -1,0 +1,101 @@
+.projects {
+  & > .title {
+    font-weight: 600;
+    font-family: "Prompt";
+    font-size: 32pt;
+    margin-bottom: 50px;
+  }
+  & > .filters {
+    display: flex;
+    margin-bottom: 25px;
+    input[type="radio"] {
+      display: none;
+      &:checked + label {
+        &:hover {
+          background-color: rgba(white, 1);
+        }
+        background-color: white;
+        color: BLACK;
+        font-weight: 600;
+      }
+      &:checked.PERSONAL + label {
+        &:hover {
+          background-color: rgba($accent-color, 1);
+        }
+        background-color: $accent-color;
+        color: white;
+      }
+      &:checked.SCHOOL + label {
+        &:hover {
+          background-color: rgba($secondary-color, 1);
+        }
+        background-color: $secondary-color;
+        color: white;
+      }
+      &.PERSONAL + label {
+        &::before {
+          content: "Personal";
+        }
+        &:hover {
+          background-color: rgba($accent-color, 0.4);
+        }
+        border-color: $accent-color;
+        color: $accent-color;
+      }
+      &.SCHOOL + label {
+        &::before {
+          content: "School";
+        }
+        &:hover {
+          background-color: rgba($secondary-color, 0.4);
+        }
+        border-color: $secondary-color;
+        color: $secondary-color;
+      }
+    }
+    label {
+      &::before {
+        content: "All";
+      }
+      min-width: 25px;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+      padding: 7px 10px;
+      border: 2px solid white;
+      border-radius: 25px;
+      margin: 0 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background-color: rgba(white, 0.4);
+      }
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  & > .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    & > .inner {
+      grid-template-columns: 1fr;
+    }
+    & > .filters {
+      input[type="radio"] {
+        &:checked + label {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

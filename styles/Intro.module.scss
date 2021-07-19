@@ -1,0 +1,91 @@
+.intro {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .avatar {
+      text-align: center;
+      display: flex;
+      width: 200px;
+      min-width: 200px;
+      height: 200px;
+      border: 2px solid $accent-color;
+      border-radius: 200px;
+      overflow: hidden;
+      margin-right: 25px;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .name {
+      font-size: 40pt;
+      .initial {
+        font-size: 120pt;
+        font-weight: 600;
+      }
+      .highlight {
+        font-family: "Prompt";
+        font-size: 60pt;
+        color: $accent-color;
+      }
+    }
+  }
+  .subheading {
+    text-align: center;
+    font-size: 20pt;
+    color: rgba(white, 0.4);
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    .social_item {
+      margin: 0 10px;
+      a {
+        color: rgba(white, 0.4);
+        font-size: 30pt;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: rgba(white, 0.6);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    .heading {
+      .avatar {
+        display: none;
+      }
+      .name {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    .heading {
+      .name {
+        font-size: 20pt;
+        .initial {
+          font-size: 60pt;
+        }
+        .highlight {
+          font-size: 30pt;
+        }
+      }
+    }
+    .subheading {
+      font-size: 16pt;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  color: rgba(white, 0.4);
+  border-bottom: 2px solid $accent-color;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  #wcb {
+    margin-bottom: 1em;
+  }
+}
