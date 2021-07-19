@@ -35,7 +35,7 @@
     & > .title {
       text-align: center;
       font-size: 20pt;
-      font-family: "Prompt";
+      font-family: "Prompt", sans-serif;
       color: $accent-color;
     }
     & > .description {
@@ -46,7 +46,7 @@
     }
     & > .period {
       text-align: center;
-      font-family: "Prompt";
+      font-family: "Prompt", sans-serif;
       color: rgba(white, 0.4);
     }
   }

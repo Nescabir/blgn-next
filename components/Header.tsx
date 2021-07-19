@@ -50,6 +50,7 @@ function Header() {
         <div className={styles.social_item}>
           <a
             href="https://twitter.com/BLGNDev"
+            id="twitter"
             target="_blank"
             rel="noreferrer"
           >
@@ -59,6 +60,7 @@ function Header() {
         <div className={styles.social_item}>
           <a
             href="https://www.linkedin.com/in/boulongne-baptiste/"
+            id="linkedin"
             target="_blank"
             rel="noreferrer"
           >
@@ -68,6 +70,7 @@ function Header() {
         <div className={styles.social_item}>
           <a
             href="https://github.com/Nescabir"
+            id="github"
             target="_blank"
             rel="noreferrer"
           >
