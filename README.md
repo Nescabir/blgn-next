@@ -1,3 +1,6 @@
+![BLGN](https://vercelbadge.vercel.app/api/nescabir/blgn-next)
+
+
 # About
 So, this is a "refactoring"-ish of my [portfolio](https://github.com/Nescabir/blgn). It was using vanilla React and I wanted a bit more control, so I chose to use Next.
 
