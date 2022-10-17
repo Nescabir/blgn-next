@@ -1,31 +1,37 @@
 import IProjects from "models/IProjects";
 import { projectType } from "models/projectType.enum";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Project from "components/Project";
 import styles from "styles/Projects.module.scss";
-import axios from "axios";
+import { projects as p } from "models/Projects";
+// import axios from "axios";
 
-type ProjectsProps = {
-  projects: IProjects[];
-};
+// type ProjectsProps = {
+//   projects: IProjects[];
+// };
 
-export async function getServerSideProps(context: any) {
-  const res = await axios.get("http://127.0.0.1:3000/api/getAllProjects");
-  const data = res.data as IProjects[];
+// export async function getServerSideProps(context: any) {
+//   const res = await axios.get("http://127.0.0.1:3000/api/getAllProjects");
+//   const data = res.data as IProjects[];
 
-  if (!data) {
-    return {
-      notFound: true,
-    };
-  }
+//   if (!data) {
+//     return {
+//       notFound: true,
+//     };
+//   }
 
-  return {
-    props: { projects: data },
-  };
-}
+//   return {
+//     props: { projects: data },
+//   };
+// }
 
-function Projects({ projects }: ProjectsProps) {
+function Projects() {
   const [typeFilter, setTypeFilter] = useState("ALL");
+  const [projects, setProjects] = useState<IProjects[]>([]);
+
+  useEffect(() => {
+    setProjects(p);
+  }, []);
 
   function handleTypeChange(changeEvent: React.ChangeEvent<HTMLInputElement>) {
     setTypeFilter(changeEvent.target.value);

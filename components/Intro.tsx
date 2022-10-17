@@ -12,9 +12,9 @@ function Intro() {
   return (
     <div className={styles.intro} id="intro">
       <div className={styles.heading}>
-        <div className={styles.avatar}>
+        {/* <div className={styles.avatar}>
           <Image src={face} alt="My face" />
-        </div>
+        </div> */}
         <div className={styles.name}>
           <span className={styles.initial}>Hi!</span> My name is{" "}
           <span className={styles.highlight}>Baptiste Boulongne</span>.
