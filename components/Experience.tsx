@@ -44,8 +44,31 @@ function Experience({ experience }: ExperienceProps) {
         <div className={styles.experience}>
           <div className={styles.title}>{experience.name}</div>
           <div className={styles.details}>
-            <div className={styles.company}>{experience.company}</div>-
-            <div className={styles.location}>{experience.location}</div>-
+            {experience.link ? (
+              <a
+                href={experience.link}
+                className={[
+                  styles.company,
+                  experience.type !== ExperienceType.EDUCATIONAL
+                    ? styles.prof
+                    : styles.educ,
+                ].join(" ")}
+              >
+                {experience.company}
+              </a>
+            ) : (
+              <div
+                className={[
+                  styles.company,
+                  experience.type !== ExperienceType.EDUCATIONAL
+                    ? styles.prof
+                    : styles.educ,
+                ].join(" ")}
+              >
+                {experience.company}
+              </div>
+            )}
+            -<div className={styles.location}>{experience.location}</div>-
             <div className={styles.period}>
               {experience.startDate.toLocaleString("default", {
                 month: "long",

@@ -14,12 +14,21 @@ import {
 function Skills() {
   const experiences: IExperiences[] = [
     {
+      name: "Full-stack Engineer",
+      type: ExperienceType.PROFESSIONAL,
+      company: "Hiboo",
+      link: "https://www.hiboo.io/",
+      location: "Chambéry",
+      startDate: new Date("2022-11-02"),
+      endDate: "Now",
+    },
+    {
       name: "Full-stack Developer",
       type: ExperienceType.PROFESSIONAL,
       company: "MoovLab",
       location: "Grenoble",
       startDate: new Date("2021-01-04"),
-      endDate: "Now",
+      endDate: new Date("2022-10-29"),
     },
     {
       name: "Associate Software Engineer",
@@ -276,7 +285,30 @@ function Skills() {
                   <div className={styles.details}>
                     <div className={styles.title}>{experience.name}</div>
                     <div className={styles.data}>
-                      <div className={styles.company}>{experience.company}</div>
+                      {experience.link ? (
+                        <a
+                          href={experience.link}
+                          className={[
+                            styles.company,
+                            experience.type !== ExperienceType.EDUCATIONAL
+                              ? styles.prof
+                              : styles.educ,
+                          ].join(" ")}
+                        >
+                          {experience.company}
+                        </a>
+                      ) : (
+                        <div
+                          className={[
+                            styles.company,
+                            experience.type !== ExperienceType.EDUCATIONAL
+                              ? styles.prof
+                              : styles.educ,
+                          ].join(" ")}
+                        >
+                          {experience.company}
+                        </div>
+                      )}
                       -
                       <div className={styles.location}>
                         {experience.location}

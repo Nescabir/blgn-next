@@ -9,7 +9,18 @@
     font-size: 18pt;
   }
   & > .details {
-    & > div {
+    & > div,
+    .company {
+      &[href] {
+        &:hover {
+          &.educ {
+            color: $secondary-color;
+          }
+          &.prof {
+            color: $accent-color;
+          }
+        }
+      }
       font-family: "Prompt", sans-serif;
       font-size: 8pt;
       display: inline;

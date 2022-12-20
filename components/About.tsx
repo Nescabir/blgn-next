@@ -8,12 +8,10 @@ function About() {
         <div className={styles.table}>
           <div className={styles.table_item}>Full name :</div>
           <div className={styles.table_item}>Baptiste Boulongne</div>
-          <div className={styles.table_item}>Phone :</div>
-          <div className={styles.table_item}>+33 6 24 27 59 84</div>
           <div className={styles.table_item}>Email :</div>
           <div className={styles.table_item}>contact [at] bgln.dev</div>
           <div className={styles.table_item}>Location :</div>
-          <div className={styles.table_item}>Grenoble, France</div>
+          <div className={styles.table_item}>Chambéry, France</div>
           <div className={styles.table_item}>Languages :</div>
           <div className={styles.table_item}>French, English</div>
         </div>
