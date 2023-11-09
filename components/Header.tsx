@@ -47,7 +47,7 @@ function Header() {
         </div>
       </div>
       <div className={styles.socials}>
-        <div className={styles.social_item}>
+        {/* <div className={styles.social_item}>
           <a
             href="https://twitter.com/BLGNDev"
             id="twitter"
@@ -56,7 +56,7 @@ function Header() {
           >
             <FontAwesomeIcon icon={faTwitterSquare} />
           </a>
-        </div>
+        </div> */}
         <div className={styles.social_item}>
           <a
             href="https://www.linkedin.com/in/boulongne-baptiste/"
