@@ -130,14 +130,6 @@ function Skills() {
       name: "Jest",
       class: "devicon-jest-plain colored"
     },
-    {
-      name: "Sass",
-      class: "devicon-sass-plain colored",
-    },
-    {
-      name: "Rails",
-      class: "devicon-rails-plain colored",
-    },
   ];
   const utils: ILangs[] = [
     {
