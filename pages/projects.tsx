@@ -4,26 +4,6 @@ import { useEffect, useState } from "react";
 import Project from "components/Project";
 import styles from "styles/Projects.module.scss";
 import { projects as p } from "models/Projects";
-// import axios from "axios";
-
-// type ProjectsProps = {
-//   projects: IProjects[];
-// };
-
-// export async function getServerSideProps(context: any) {
-//   const res = await axios.get("http://127.0.0.1:3000/api/getAllProjects");
-//   const data = res.data as IProjects[];
-
-//   if (!data) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-
-//   return {
-//     props: { projects: data },
-//   };
-// }
 
 function Projects() {
   const [typeFilter, setTypeFilter] = useState("ALL");

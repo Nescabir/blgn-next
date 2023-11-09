@@ -20,7 +20,7 @@ function Skills() {
       link: "https://www.hiboo.io/",
       location: "Chambéry",
       startDate: new Date("2022-11-02"),
-      endDate: "Now",
+      endDate: new Date("2023-08-17"),
     },
     {
       name: "Full-stack Developer",
