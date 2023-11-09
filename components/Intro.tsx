@@ -21,10 +21,10 @@ function Intro() {
         </div>
       </div>
       <div className={styles.subheading}>
-        I&apos;m a full-stack developer and a software engineer.
+        I&apos;m a software engineer.
       </div>
       <div className={styles.socials}>
-        <div className={styles.social_item}>
+        {/* <div className={styles.social_item}>
           <a
             href="https://twitter.com/BLGNDev"
             target="_blank"
@@ -32,7 +32,7 @@ function Intro() {
           >
             <FontAwesomeIcon icon={faTwitterSquare} />
           </a>
-        </div>
+        </div> */}
         <div className={styles.social_item}>
           <a
             href="https://www.linkedin.com/in/boulongne-baptiste/"
