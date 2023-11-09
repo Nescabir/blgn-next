@@ -89,16 +89,8 @@ function Skills() {
       class: "devicon-typescript-plain colored",
     },
     {
-      name: "Ruby",
-      class: "devicon-ruby-plain colored",
-    },
-    {
       name: "C#",
       class: "devicon-csharp-plain colored",
-    },
-    {
-      name: "Sass",
-      class: "devicon-sass-plain colored",
     },
     {
       name: "SQL",
@@ -119,6 +111,10 @@ function Skills() {
       class: "devicon-react-plain colored",
     },
     {
+      name: "Next",
+      class: "devicon-nextjs-original",
+    },
+    {
       name: "Vue.js",
       class: "devicon-vuejs-plain colored",
     },
@@ -131,12 +127,16 @@ function Skills() {
       class: "devicon-mocha-plain colored",
     },
     {
-      name: "Rails",
-      class: "devicon-rails-plain colored",
+      name: "Jest",
+      class: "devicon-jest-plain colored"
     },
     {
-      name: "Bootstrap",
-      class: "devicon-bootstrap-plain colored",
+      name: "Sass",
+      class: "devicon-sass-plain colored",
+    },
+    {
+      name: "Rails",
+      class: "devicon-rails-plain colored",
     },
   ];
   const utils: ILangs[] = [
@@ -157,6 +157,10 @@ function Skills() {
       class: "devicon-npm-original-wordmark colored",
     },
     {
+      name: "Yarn",
+      class: "devicon-yarn-plain colored",
+    },
+    {
       name: "Github",
       class: "devicon-github-plain",
     },
@@ -168,6 +172,10 @@ function Skills() {
       name: "MongoDB",
       class: "devicon-mongodb-plain colored",
     },
+    {
+      name: "PostgreSQL",
+      class: "devicon-postgresql-plain colored",
+    },
   ];
   const os: ILangs[] = [
     {
@@ -177,6 +185,14 @@ function Skills() {
     {
       name: "Windows",
       class: "devicon-windows8-plain colored",
+    },
+    {
+      name: "Docker",
+      class: "devicon-docker-plain colored",
+    },
+    {
+      name: "Heroku",
+      class: "devicon-heroku-original colored",
     },
   ];
 
