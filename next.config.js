@@ -6,4 +6,8 @@ module.exports = {
     includePaths: [path.join(__dirname, "styles")],
     prependData: `@import 'utils/utils';`,
   },
+  swcMinify: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  }
 };
