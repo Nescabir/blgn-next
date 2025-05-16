@@ -6,13 +6,13 @@ function About() {
       <div className={styles.title}>About me</div>
       <div className={styles.container}>
         <div className={styles.table}>
-          <div className={styles.table_item}>Full name :</div>
+          <div className={styles.table_item}>Full name:</div>
           <div className={styles.table_item}>Baptiste Boulongne</div>
-          <div className={styles.table_item}>Email :</div>
+          <div className={styles.table_item}>Email:</div>
           <div className={styles.table_item}>contact [at] bgln.dev</div>
-          <div className={styles.table_item}>Location :</div>
+          <div className={styles.table_item}>Location:</div>
           <div className={styles.table_item}>Chambéry, France</div>
-          <div className={styles.table_item}>Languages :</div>
+          <div className={styles.table_item}>Languages:</div>
           <div className={styles.table_item}>French, English</div>
         </div>
         <div className={styles.text_zone}>

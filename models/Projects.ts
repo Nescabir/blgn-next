@@ -9,8 +9,17 @@ import csharp from "public/csharp.jpg";
 import php from "public/php.jpg";
 import html from "public/html.jpg";
 import bouncingballs from "public/bouncingballs.jpg";
+import myhud from "public/myhud.png";
 
 export const projects: IProjects[] = [
+  {
+    name: "MyHUD",
+    description: "MyHUD is a simple and easy to use HUD for CS2",
+    image: myhud.src,
+    link: "https://myhud.app/",
+    type: projectType.PERSONAL,
+    date: [new Date("2024-05-01")],
+  },
   {
     name: "Portfolio v2",
     description: "Same portfolio, but using NextJS",

@@ -14,6 +14,15 @@ import {
 function Skills() {
   const experiences: IExperiences[] = [
     {
+      name: "Game Tester",
+      type: ExperienceType.PROFESSIONAL,
+      company: "Confidential",
+      link: "",
+      location: "Remote",
+      startDate: new Date("2024-03-01"),
+      endDate: new Date("2024-05-01"),
+    },
+    {
       name: "Full-stack Engineer",
       type: ExperienceType.PROFESSIONAL,
       company: "Hiboo",
@@ -89,8 +98,8 @@ function Skills() {
       class: "devicon-typescript-plain colored",
     },
     {
-      name: "C#",
-      class: "devicon-csharp-plain colored",
+      name: "Go",
+      class: "devicon-go-original-wordmark colored",
     },
     {
       name: "SQL",
@@ -112,7 +121,7 @@ function Skills() {
     },
     {
       name: "Next",
-      class: "devicon-nextjs-original",
+      class: "devicon-nextjs-plain",
     },
     {
       name: "Vue.js",
@@ -121,6 +130,10 @@ function Skills() {
     {
       name: "Angular",
       class: "devicon-angularjs-plain colored",
+    },
+    {
+      name: "Tailwind CSS",
+      class: "devicon-tailwindcss-plain colored",
     },
     {
       name: "Mocha",
@@ -143,18 +156,6 @@ function Skills() {
     {
       name: "SSH",
       class: "devicon-ssh-plain",
-    },
-    {
-      name: "NPM",
-      class: "devicon-npm-original-wordmark colored",
-    },
-    {
-      name: "Yarn",
-      class: "devicon-yarn-plain colored",
-    },
-    {
-      name: "Github",
-      class: "devicon-github-plain",
     },
     {
       name: "Firebase",
